@@ -1,22 +1,12 @@
-version: '3'
+version: '3.8'
 services:
   app:
     build:
       context: .
-      dockerfile: Dockerfile.production
-    ports:
-      - 8080:8080
+      dockerfile: Dockerfile
     volumes:
       - ./app:/app
-  caddy:
-    build:
-      context: ./services/caddy
-      dockerfile: Dockerfile
     ports:
-      - 80:80
-      - 443:443
-    volumes:
-      - ./services/caddy/Caddyfile:/etc/caddy/Caddyfile
-    depends_on:
-      - app
+      - 8080:8080
+    command: bash -c 'sleep 3 && npm start'
 
