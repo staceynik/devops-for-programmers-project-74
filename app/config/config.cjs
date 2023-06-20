@@ -13,10 +13,7 @@ module.exports = {
     port: process.env.DATABASE_PORT,
     host: process.env.DATABASE_HOST,
     dialectOptions: {
-      ssl: {
-        require: true,
-        rejectUnauthorized: false,
-      },
+      ssl: false,
     },
   },
  
