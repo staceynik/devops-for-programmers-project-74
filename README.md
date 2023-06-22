@@ -24,10 +24,10 @@ To run this project, you need to have the following software installed:
 
 The Makefile provides convenient commands for preparing and running the project. Here are some examples:
 
-- Run the project in development mode: make dev
-- Build and start the containers: make up
-- Stop and remove the containers: make down
-- Run tests: make test
+- Run the project in development mode: `make dev`
+- Build and start the containers: `make up`
+- Stop and remove the containers: `make down`
+- Run tests: `make test`
 
 Feel free to modify the Makefile according to your needs.
 
