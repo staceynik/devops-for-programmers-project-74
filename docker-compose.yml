@@ -20,7 +20,7 @@ services:
   db:
     image: postgres:latest
     ports: 
-      - 5433:5432
+      - 5432:5432
     environment:
       - POSTGRES_DB=${DATABASE_NAME}
       - POSTGRES_USER=${DATABASE_USERNAME}
