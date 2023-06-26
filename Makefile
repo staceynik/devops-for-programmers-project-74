@@ -1,28 +1,28 @@
 # Makefile
 
 ci:
-        docker-compose -f docker-compose.yml up --abort-on-container-exit
+	docker-compose -f docker-compose.yml up --abort-on-container-exit
 
 setup-env:
-        cp .env.example .env
+	test -f .env || cp .env.example .env
 
 install-dependencies:
-        npm install
+	docker-compose run --rm app npm install
 
 dev:
-        docker-compose up
+	docker-compose up
 
 prod:
-        docker-compose -f docker-compose.prod.yml up
+	docker-compose -f docker-compose.prod.yml up
 
 test:
-        docker-compose run --rm app npm test
+	docker-compose run --rm app npm test
 
 build:
-        docker-compose build
+	docker-compose build
 
 push:
-        docker-compose push
+	docker-compose push
 
 .PHONY: ci setup-env install-dependencies dev prod test build push
 

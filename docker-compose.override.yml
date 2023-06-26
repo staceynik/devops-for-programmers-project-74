@@ -1,5 +1,10 @@
 version: '3.8'
 services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.production
+
   caddy:
     image: caddy:latest
     volumes:
