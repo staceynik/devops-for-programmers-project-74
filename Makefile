@@ -16,7 +16,7 @@ prod:
 	docker-compose -f docker-compose.prod.yml up
 
 test:
-	docker-compose run --rm app npm test
+	docker-compose up --abort-on-container-exit
 
 build:
 	docker-compose build
