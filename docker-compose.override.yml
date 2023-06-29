@@ -4,6 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.production
+    command: npm run dev
 
   caddy:
     image: caddy:latest

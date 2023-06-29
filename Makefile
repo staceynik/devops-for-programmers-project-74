@@ -16,7 +16,7 @@ prod:
 	docker-compose -f docker-compose.prod.yml up
 
 test:
-	docker-compose -f docker-compose.yml -f docker-compose.override.yml up --abort-on-container-exit app caddy db
+	docker-compose -f docker-compose.yml up --abort-on-container-exit app db
 
 
 build:
