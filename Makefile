@@ -16,8 +16,7 @@ prod:
 	docker-compose -f docker-compose.prod.yml up
 
 test:
-	docker-compose -f docker-compose.yml up --abort-on-container-exit app db
-
+	docker-compose -f docker-compose.yml up --abort-on-container-exit
 
 build:
 	docker-compose build
@@ -26,4 +25,5 @@ push:
 	docker-compose push
 
 .PHONY: ci setup-env install-dependencies dev prod test build push
+
 
