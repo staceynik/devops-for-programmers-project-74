@@ -1,7 +1,9 @@
 version: '3.8'
 services:
   app:
-    image: staceynik/devops-for-programmers-project-74:latest
+    build:
+      context: /home/karpov/devops-for-programmers-project-74/app
+      dockerfile: Dockerfile
     command: npm run dev
 
   caddy:

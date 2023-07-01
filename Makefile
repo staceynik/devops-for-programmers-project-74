@@ -12,8 +12,6 @@ install-dependencies:
 dev:
 	docker-compose up
 
-prod:
-	docker-compose -f docker-compose.prod.yml up
 
 test:
 	docker-compose -f docker-compose.yml up --abort-on-container-exit
