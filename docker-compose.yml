@@ -3,8 +3,8 @@ services:
   app:
     build:
       context: .
-      dockerfile: app/Dockerfile.production
-    image: staceynik/devops-for-programmers-project-74:latest
+      dockerfile: Dockerfile.production
+    image: local/devops-for-programmers-project-74:latest
     ports:
       - ${PORT_HTTP:-8080}:8080
     command: bash -c "sleep 5 && npm test"
