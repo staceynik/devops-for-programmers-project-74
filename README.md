@@ -17,7 +17,8 @@ To run this project, you need to have the following software installed:
 2. Navigate to the project directory: `cd devops-for-programmers-project-74`.
 3. Create a `.env` file with the required environment variables. You can use the provided `.env.example` as a template.
 4. Install project dependencies by running the following command: `make install-dependencies`.
-5. Build and start the containers using Docker Compose: `docker-compose up -d`.
+5. Build the containers using Docker Compose: `make build`
+5. Build and start the containers using Docker Compose: `make up`.
 6. Access the application at `http://localhost:8080`.
 
 ## Makefile commands:
