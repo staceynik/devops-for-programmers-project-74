@@ -2,7 +2,7 @@ version: '3.8'
 services:
   app:
     build:
-      context: /home/karpov/devops-for-programmers-project-74/app
+      context: ./app
       dockerfile: Dockerfile
     command: npm run dev
 
