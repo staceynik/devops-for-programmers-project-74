@@ -12,6 +12,9 @@ install-dependencies:
 up:
 	docker-compose up
 
+down:  
+        docker-compose down
+
 dev:
 	docker-compose up -d
 
