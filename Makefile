@@ -9,9 +9,11 @@ setup-env:
 install-dependencies:
 	docker-compose run --rm app npm install
 
-dev:
+up:
 	docker-compose up
 
+dev:
+	docker-compose up -d
 
 test:
 	docker-compose -f docker-compose.yml up --abort-on-container-exit
