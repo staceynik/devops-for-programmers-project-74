@@ -1,7 +1,9 @@
-# DevOps for Programmers Project 74
+# Packaging in Docker Compose
 [![Actions Status](https://github.com/staceynik/devops-for-programmers-project-74/workflows/hexlet-check/badge.svg)](https://github.com/staceynik/devops-for-programmers-project-74/actions)
 
-This is a sample project that demonstrates DevOps practices for programmers.
+This project involves packaging the js-fastify-blog application into a Docker image. The application already adheres to the Twelve-Factor App methodology, minimizing differences between development and production environments.
+
+Docker Compose is used to configure the development environment, run tests, and CI. Upon successful CI execution, the application image is built and published to hub.docker.com. This streamlines the setup and launch of the application within minutes, without requiring extensive instructions.
 
 ## Requirements
 
